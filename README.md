@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-`git clone`
+`git clone https://github.com/myinusa/first-name-book-searcher.git`
 
 `cd first-name-book-searcher`
 
@@ -39,17 +39,17 @@ Run `node /script/count.js` to write a file `resources/sorted-names.json` that o
 
 ## Project Structure
 
-| Name                                 | Description                                                                  |
-| ------------------------------------ | ---------------------------------------------------------------------------- |
-| server/index.ts                      | Application entry point                                                      |
-| server/server.ts                     | Initialization of server                                                     |
-| server/controllers/name-countCtrl.js | Handles request for name count                                               |
-| server/routes/name-count.js          | Defines /name-count endpoint                                                 |
-| server/routes/routes.ts              | Application routes / endpoints                                               |
-| script/count.js                      | Outputs number of occurrences from firstName.txt in Oliver-twist.txt extract |
-| resources/first-names.txt            | List of first names                                                          |
-| resources/oliver-twist.txt           | Oliver twist book                                                            |
-|                                      |                                                                              |
+| Name                                     | Description                                                  |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| **server**/index.ts                      | Application entry point                                      |
+| **server**/server.ts                     | Initialization of server                                     |
+| **server**/controllers/name-countCtrl.js | Handles request for name count                               |
+| **server**/routes/name-count.js          | Defines /name-count endpoint                                 |
+| **server**/routes/routes.ts              | Application routes / endpoints                               |
+| **script**/count.js                      | Outputs number of occurrences from firstName.txt in Oliver-twist.txt extract |
+| **resources**/first-names.txt            | List of first names                                          |
+| **resources**/oliver-twist.txt           | Oliver twist book                                            |
+|                                          |                                                              |
 
 ## Dependencies
 
