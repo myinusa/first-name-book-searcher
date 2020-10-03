@@ -2,7 +2,7 @@ var fs = require("fs");
 var olivertwist = "../resources/oliver-twist.txt";
 var firstNames = "../resources/first-names.txt";
 
-(module.export = function main() {
+(function main() {
   // reads oliver twist file
   fs.readFile(olivertwist, "utf8", function (err, bookData) {
     if (err) throw err;
@@ -27,10 +27,14 @@ var firstNames = "../resources/first-names.txt";
         count[i] = (count[i] || 0) + 1;
       });
 
-      var sortedWordsArray = sortByCount(count);
-      let test = ["2", "3"];
-      // return test;
-      console.log(sortedWordsArray);
+      var sortedNamesArray = sortByCount(count);
+
+      // writes the sorted names
+      fs.writeFileSync(
+        "../resources/sorted-names.json",
+        JSON.stringify(sortedNamesArray)
+      );
+      console.log("File saved!");
     });
   });
 })();

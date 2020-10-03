@@ -7,12 +7,10 @@
     "indent": [true, "spaces"],
     "one-line": [true, "check-open-brace", "check-whitespace"],
     "no-var-keyword": true,
-    "quotemark": [true, "single", "avoid-escape"],
-    "semicolon": [true, "always", "ignore-bound-class-methods"],
     "no-internal-module": true,
     "no-trailing-whitespace": true,
     "no-null-keyword": true,
-    "jsdoc-format": true
+    "prefer-const": false
   },
   "rulesDirectory": []
 }

@@ -32,15 +32,13 @@ export default class NameCount {
           count[i] = (count[i] || 0) + 1;
         });
 
-        var sortedWordsArray = NameCount.prototype.sortByCount(count);
+        var sortedNamesArray = NameCount.prototype.sortByCount(count);
         
         //stores parameter in a variable
         const query = req.params.name;
 
         // check if JSON object contains the query value
-        const result = sortedWordsArray.filter((value: { name: string; }) => value.name === query);
-
-        //console.log(result);
+        const result = sortedNamesArray.filter((value: { name: string; }) => value.name === query);
 
         // error validation if the query is empty
         if (result === undefined || result.length == 0) {
