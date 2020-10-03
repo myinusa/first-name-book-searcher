@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "rootDir": "./",
+    "noImplicitAny": false,
+    "outDir": "./build",
+    "strict": true,
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "*": ["node_modules/*", "/*"]
+    }
+  },
+  "include": ["/**/*"]
+}
